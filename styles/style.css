@@ -1,0 +1,72 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --light-blue: hsl(223, 87%, 75%);
+  --pale-blue: hsl(223, 15%, 58%);
+  --light-red: hsl(354, 100%, 66%); 
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+}
+.w-10 {
+  width: 20vw;
+  max-width: 80px;
+}
+.w-md-80 {
+  width: 80vw;
+  max-width: 700px;
+}
+.text-gray {
+  color: var(--gray);
+}
+.text-very-dark-blue {
+  color: var(--very-dark-blue);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.border-gray {
+  color: var(--gray);
+}
+.input-email-error {
+  border: 1px solid red !important;
+}
+.message-error {
+  display: none;
+  color: red;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: .5rem;
+  padding-left: .5rem;
+} 
+svg {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  fill: var(--blue);
+}
+a:hover,
+svg:hover {
+  background-color: var(--blue)!important;
+  fill: white;
+}
+footer {
+  margin-top: auto;
+}
+
+@media screen and (min-width: 768px) { 
+  .btn {
+    width: 35%!important;
+    margin-top: 0!important;
+    margin-left: 1rem!important;
+  }
+  .btn:hover {
+    background-color: var(--light-blue);
+    transition: all 0.1s ease;
+  }
+}
