@@ -1,10 +1,4 @@
-# 👩‍💻 Frontend Mentor - Ping coming soon page solution
-
-[Frontend Mentor challenges](https://www.frontendmentor.io/) help you improve your coding skills by building realistic projects.
-
-This is a solution for [Ping Coming Soon Page](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da) challenge.
-
-![Design preview for the coming soon page coding challenge](./styles/images/preview.png)
+# 👩‍💻 Ping coming soon page solution
 
 
 ## The challenge
@@ -28,11 +22,18 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
-## Live site solution
+<div>
+  <h3>
+    <a href= "https://amansgz.github.io/bootstrap-ping-coming-soon-page/">
+      Live site
+    </a>
+    <span> | </span>
+    <a href= "https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-[Live site](https://amansgz.github.io/bootstrap-ping-coming-soon-page/) deployed with GitHub Pages.
+![Design preview for the coming soon page coding challenge](./styles/images/preview.png)
 
-
-## Author
-
-- Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
+This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a> 
