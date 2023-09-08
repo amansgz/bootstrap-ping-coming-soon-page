@@ -9,9 +9,17 @@ btnSubmit.addEventListener('click', e => {
   const emailValue = formInput.value;
   const validation = validate_email(emailValue);
 
-  if (!validation || formInput.value == '') {
+  
+  if(emailValue == '') {
     formInput.classList.add('input-email-error');
     errorMessage.style.display = 'block';
+    errorMessage.textContent = 'Whoops! It looks like you forgot to add your email';
+  }
+
+  if (!validation) {
+    formInput.classList.add('input-email-error');
+    errorMessage.style.display = 'block';
+    errorMessage.textContent = 'Please provide a valid email address';
     btnSubmit.style.backgroundColor = 'hsl(223, 87%, 75%)';
   }
   if(validation) {
@@ -22,9 +30,9 @@ btnSubmit.addEventListener('click', e => {
   }
 })
 
-function validate_email(email) {
-    const regex =  /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
-
+function validate_email(email) {/* 
+    const regex =  /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/; */
+    
     if (email.match(regex)) {
       return true;
     }else {
